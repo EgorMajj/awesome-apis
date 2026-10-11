@@ -53,7 +53,7 @@ def get_categories_content(contents: List[str]) -> Tuple[Categories, CategoriesL
             category_line_num[category] = line_num
             continue
 
-        if not line_content.startswith('|') or re.match(r'^\\|\\s*:?-{3,}', line_content):
+        if not line_content.startswith('|') or re.match(r'^\|\s*:?-{3,}', line_content):
             continue
 
         # Introductory tables (for example, the MCP tools table) are not API
@@ -239,7 +239,7 @@ def check_file_format(lines: List[str]) -> List[str]:
             continue
 
         # skips lines that we do not care about
-        if not line_content.startswith('|') or re.match(r'^\\|\\s*:?-{3,}', line_content):
+        if not line_content.startswith('|') or re.match(r'^\|\s*:?-{3,}', line_content):
             continue
 
         num_in_category += 1
