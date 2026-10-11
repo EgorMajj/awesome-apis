@@ -1485,7 +1485,7 @@ API | Description | Auth | HTTPS | CORS |
 | [Allowly Hiring Evidence](https://allowly.ai/docs/solutions/hiring/api/) | Deterministic hiring policy decisions and signed evidence records | `apiKey` | Yes | No |
 | [Arbeitnow](https://documenter.getpostman.com/view/18545278/UVJbJdKh) | API for Job board aggregator in Europe / Remote | No | Yes | Yes |
 | [Arbeitsamt](https://jobsuche.api.bund.dev/) | API for the "Arbeitsamt", which is a german Job board aggregator | `OAuth` | Yes | Unknown |
-| [Artificial Intelligence Jobs](https://artificialintelligencejobs.co/developers) | Current AI and ML roles from 260+ company career pages, with pay, location, and seniority filters | No | Yes | Yes |
+| [Artificial Intelligence Jobs](https://artificialintelligencejobs.co/developers) | AI and ML jobs from 260+ company sites, with salary, location, remote, and seniority filters | No | Yes | Yes |
 | [Careerjet](https://www.careerjet.com/partners/api/) | Job find engine | `apiKey` | No | Unknown |
 | [CuratorSearch](https://curatorsearch.com/developers) | Museum and gallery jobs from 400+ institutions' own careers pages, with advertised salaries | No | Yes | Yes |
 | [Dabloons](https://dabloons.net/llms.txt) | A task board where AI agents post and complete work such as PR reviews and bug reproduction | `apiKey` | Yes | No |
@@ -1526,7 +1526,7 @@ API | Description | Auth | HTTPS | CORS |
 | [Audexum](https://audexum.com/docs) | Speech-to-text in 25 languages and text-to-speech with 43 voices in 32 languages | `apiKey` | Yes | Yes |
 | [BRAINIALL](https://github.com/fasuizu-br/brainiall-transcription-skill) | PT-BR and Spanish audio transcription with diarization and SRT/VTT | `apiKey` | Yes | Yes |
 | [Clarifai](https://docs.clarifai.com/api-guide/api-overview) | Computer Vision | `OAuth` | Yes | Unknown |
-| [Cohere](https://docs.cohere.com/reference/about) | Text generation, embeddings, classification, and summaries through an NLP API with a free trial | `apiKey` | Yes | Yes |
+| [Cohere](https://docs.cohere.com/reference/about) | NLP API for text generation, embeddings, classification, and summaries; includes a free trial | `apiKey` | Yes | Yes |
 | [Cloudmersive](https://www.cloudmersive.com/image-recognition-and-processing-api) | Image captioning, face recognition, NSFW classification | `apiKey` | Yes | Yes |
 | [DeepAI](https://deepai.org/) | Offers AI-powered APIs for text generation, image processing, and more | `apiKey` | Yes | Yes |
 | [Deepcode](https://www.deepcode.ai) | AI for code review | No | Yes | Unknown |
@@ -1996,7 +1996,7 @@ API | Description | Auth | HTTPS | CORS |
 | [SoldStack](https://soldstack.fly.dev/docs) | Sold resale listings from Poshmark with median price, days to sell and net payout after fees | `apiKey` | Yes | No |
 | [Sparepilot](https://sparepilot.com/developers) | Spare parts catalog, OEM cross-references and price comparison for garden power equipment | `apiKey` | Yes | Unknown |
 | [Tokopedia](https://developer.tokopedia.com/openapi/guide/#/) | Tokopedia's Official API for integration of various services from Tokopedia | `OAuth` | Yes | Unknown |
-| [WooCommerce](https://woocommerce.github.io/woocommerce-rest-api-docs/) | Manage WordPress store data with REST endpoints for create, read, update, and delete operations | `apiKey` | Yes | Yes |
+| [WooCommerce](https://woocommerce.github.io/woocommerce-rest-api-docs/) | Create, read, update, or delete WordPress store data through REST endpoints | `apiKey` | Yes | Yes |
 
 **[↑ Browse categories](#index)**
 
@@ -2257,7 +2257,7 @@ API | Description | Auth | HTTPS | CORS |
 | [Railway Transport for France](https://www.digital.sncf.com/startup/api) | SNCF public API | `apiKey` | Yes | Unknown |
 | [Railworks](https://railworks.paddez.com/docs) | Irish Rail engineering work alerts, affected stations, DART closures, and ICS feeds | No | Yes | Yes |
 | [REFUGE Restrooms](https://www.refugerestrooms.org/api/docs/#!/restrooms) | Offers safe restroom access for transgender, intersex and gender nonconforming individuals | No | Yes | Unknown |
-| [Road511](https://road511.com/docs.html) | Traffic data across 65 US and Canadian jurisdictions, including cameras, signs, and truck routes | `apiKey` | Yes | No |
+| [Road511](https://road511.com/docs.html) | Traffic feeds across 65 US and Canadian areas, including cameras, signs, bridges, and truck routes | `apiKey` | Yes | No |
 | [Sabre for Developers](https://developer.sabre.com/guides/travel-agency/quickstart/getting-started-in-travel) | Travel Find - Limited usage | `apiKey` | Yes | Unknown |
 | [Schiphol Airport](https://developer.schiphol.nl/) | Schiphol | `apiKey` | Yes | Unknown |
 | [SMKlog](https://smklog.com/openapi.json) | Live parcel shipping rates and labels from a plain-words item description | No | Yes | No |
