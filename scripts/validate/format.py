@@ -43,6 +43,7 @@ def get_categories_content(contents: List[str]) -> Tuple[Categories, CategoriesL
 
     categories = {}
     category_line_num = {}
+    category = None
 
     for line_num, line_content in enumerate(contents):
 
@@ -53,6 +54,11 @@ def get_categories_content(contents: List[str]) -> Tuple[Categories, CategoriesL
             continue
 
         if not line_content.startswith('|') or line_content.startswith('|---'):
+            continue
+
+        # Introductory tables (for example, the MCP tools table) are not API
+        # category tables. Only collect entries after the first API category.
+        if category is None:
             continue
 
         raw_title = [
@@ -225,6 +231,11 @@ def check_file_format(lines: List[str]) -> List[str]:
             category = line_content.split(' ')[1]
             category_line = line_num
             num_in_category = 0
+            continue
+
+        # Ignore introductory tables before the first API category.
+        # The README may include other reference tables before the directory.
+        if not category:
             continue
 
         # skips lines that we do not care about
