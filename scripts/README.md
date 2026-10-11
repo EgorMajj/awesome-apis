@@ -1,75 +1,60 @@
-# Public APIs Scripts
+# Repository maintenance tools
 
-This directory contains all validation and testing scripts used by Public APIs.
+The `scripts/` folder contains small checks used to keep the API directory tidy and to catch broken links before changes are proposed.
 
-```bash
-scripts
-│   github_pull_request.sh  # used to validate changes of a pull request
-│   requirements.txt  # contains dependencies of validate package
-│
-├───tests  # contains all unit tests from the validate package
-│       test_validate_format.py
-│       test_validate_links.py
-│
-└───validate  # validate package
-        format.py
-        links.py
+## Folder map
+
+```text
+scripts/
+├── github_pull_request.sh     # local checks used while preparing changes
+├── requirements.txt           # Python packages used by the checks
+├── tests/                     # automated tests
+└── validate/                  # README formatting and link checks
 ```
 
-## Install dependencies
+## Set up
 
-You must have [python](https://www.python.org/) installed to use these scripts.
-
-it is also necessary to install the validation package dependencies, use [pip package manager](https://pypi.org/project/pip/) for this:
+Install [Python 3](https://www.python.org/) first. From the repository root, install the packages listed for the maintenance tools:
 
 ```bash
-$ python -m pip install -r scripts/requirements.txt
+python -m pip install -r scripts/requirements.txt
 ```
 
-## Run validations
+## Check the directory
 
-To run format validation on the `README.md` file, being in the root directory of public-apis, run:
+Run these commands from the root of this repository.
+
+Check the README table formatting:
 
 ```bash
-$ python scripts/validate/format.py README.md
+python scripts/validate/format.py README.md
 ```
 
-To run link validation on the `README.md` file, being in the root directory of public-apis, run:
+Check links in the README:
 
 ```bash
-$ python scripts/validate/links.py README.md
+python scripts/validate/links.py README.md
 ```
 
-As there are many links to check, this process can take some time. If your goal is not to check if the links are working, you can only check for duplicate links. Run:
+A full link pass can take a while because the directory contains many external sites. To check for duplicates without requesting every link, use:
 
 ```bash
-$ python scripts/validate/links.py README.md -odlc
+python scripts/validate/links.py README.md -odlc
 ```
 
-*`-odlc` is an abbreviation of `--only_duplicate_links_checker`*
+The `-odlc` flag is short for `--only_duplicate_links_checker`.
 
-## Running Tests
+## Run the tests
 
-To run all tests it is necessary to change to the scripts directory:
+From the repository root:
 
 ```bash
-$ cd scripts
+python -m unittest discover scripts/tests/ --verbose
 ```
 
-then run:
+To focus on one test file, add a pattern:
 
 ```bash
-$ python -m unittest discover tests/ --verbose
-```
-
-To run only the format tests, run:
-
-```bash
-$ python -m unittest discover tests/ --verbose --pattern "test_validate_format.py"
-```
-
-To run only the links tests, run:
-
-```bash
-$ python -m unittest discover tests/ --verbose --pattern "test_validate_links.py"
+python -m unittest discover scripts/tests/ --verbose --pattern "test_validate_format.py"
+python -m unittest discover scripts/tests/ --verbose --pattern "test_validate_links.py"
 ```
