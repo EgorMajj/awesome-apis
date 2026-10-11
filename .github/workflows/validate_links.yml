@@ -1,28 +1,28 @@
-name: "Validate links"
+name: "Scheduled link audit"
 
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '0 0 * * *'
+    - cron: '0 0 * * *'
 
 env:
   FILENAME: README.md
 
 jobs:
-  validate_links:
-    name: 'Check all links are working'
+  links:
+    name: "Check the directory's external links"
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Get the repository files
         uses: actions/checkout@v2
 
-      - name: Set up Python
+      - name: Prepare Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.8'
 
-      - name: Install dependencies
+      - name: Install check dependencies
         run: python -m pip install -r scripts/requirements.txt
 
-      - name: Validate all links from README.md
+      - name: Check every listed link
         run: python scripts/validate/links.py ${FILENAME}
