@@ -1,13 +1,10 @@
-<!-- Thank you for taking the time to work on a Pull Request for this project! -->
-<!-- To ensure your PR is dealt with swiftly please check the following: -->
-- [ ] My submission is formatted according to the guidelines in the [contributing guide](/CONTRIBUTING.md)
-- [ ] My addition is ordered alphabetically
-- [ ] My submission has a useful description
-- [ ] The description does not have more than 100 characters
-- [ ] The description does not end with punctuation
-- [ ] Each table column is padded with one space on either side
-- [ ] I have searched the repository for any relevant issues or pull requests
-- [ ] Any category I am creating has the minimum requirement of 3 items
-- [ ] All changes have been [squashed][squash-link] into a single commit
-
-[squash-link]: <https://github.com/todotxt/todo.txt-android/wiki/Squash-All-Commits-Related-to-a-Single-Issue-into-a-Single-Commit>
+<!-- Thanks for improving the Awesome APIs directory. -->
+<!-- Please check the items below before submitting. -->
+- [ ] I checked the provider's official documentation.
+- [ ] The entry is in the right category and in alphabetical order.
+- [ ] The description is concise, factual, and no longer than 100 characters.
+- [ ] The description does not end with punctuation.
+- [ ] Table columns use the same spacing as the surrounding entries.
+- [ ] Authentication, HTTPS, and CORS values reflect the available documentation.
+- [ ] I checked for duplicate entries and related issues.
+- [ ] I did not include secrets, access tokens, or private information.
