@@ -1,4 +1,5 @@
-Thanks for looking to open an issue for this project.
+Thanks for helping keep this directory useful.
 
-If you are opening an issue to suggest adding a new entry, please consider opening a pull request instead!
+For a broken link or outdated entry, please include the API name and a link to the provider's current documentation. For a missing API, mention what it does and where its official documentation can be found.
 
+Please avoid posting private keys, tokens, or other credentials.
