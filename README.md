@@ -2257,7 +2257,7 @@ API | Description | Auth | HTTPS | CORS |
 | [Railway Transport for France](https://www.digital.sncf.com/startup/api) | SNCF public API | `apiKey` | Yes | Unknown |
 | [Railworks](https://railworks.paddez.com/docs) | Irish Rail engineering work alerts, affected stations, DART closures, and ICS feeds | No | Yes | Yes |
 | [REFUGE Restrooms](https://www.refugerestrooms.org/api/docs/#!/restrooms) | Offers safe restroom access for transgender, intersex and gender nonconforming individuals | No | Yes | Unknown |
-| [Road511](https://road511.com/docs.html) | Traffic feeds across 65 US and Canadian areas, including cameras, signs, bridges, and truck routes | `apiKey` | Yes | No |
+| [Road511](https://road511.com/docs.html) | Traffic data across 65 US and Canadian regions: cameras, signs, bridges, and truck routes | `apiKey` | Yes | No |
 | [Sabre for Developers](https://developer.sabre.com/guides/travel-agency/quickstart/getting-started-in-travel) | Travel Find - Limited usage | `apiKey` | Yes | Unknown |
 | [Schiphol Airport](https://developer.schiphol.nl/) | Schiphol | `apiKey` | Yes | Unknown |
 | [SMKlog](https://smklog.com/openapi.json) | Live parcel shipping rates and labels from a plain-words item description | No | Yes | No |
